@@ -65,6 +65,8 @@ function takePhotoAndUpload() {
   }).catch(reason => {
     console.log('Error:', reason)
   })
+
+  window.location.href = '/pixel-friends/thanks.html'
 }
 
 getVideo()
