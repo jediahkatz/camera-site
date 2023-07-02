@@ -36,13 +36,34 @@
     opacity: 0.5;
 }
 
-/* #capture-btn {
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    border: 4px solid #fff;
-} */
+#thanks-page {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    visibility: hidden;
+}
+
+h1 {
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 48px;
+    margin-bottom: 5px;
+}
+
+h2 {
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 300px;
+}

@@ -43,6 +43,13 @@ function paintToCanvas() {
   }, 16)
 }
 
+function changeToThanksPage() {
+  const cameraPage = document.getElementById('camera-page')
+  const thanksPage = document.getElementById('thanks-page')
+  cameraPage.parentElement.removeChild(cameraPage)
+  thanksPage.style.visibility = 'visible'
+}
+
 function takePhotoAndUpload() {
   // Extract current image data from the canvas
   let API_URL = 'https://whgvo3ae9f.execute-api.us-east-2.amazonaws.com/default/upload-pixel-me'
@@ -66,7 +73,7 @@ function takePhotoAndUpload() {
     console.log('Error:', reason)
   })
 
-  window.location.href = '/pixel-friends/thanks.html'
+  changeToThanksPage()
 }
 
 getVideo()
